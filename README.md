@@ -2,14 +2,20 @@
 
 Simplified Workflow:
 
-    Fetch Data: Query DexScreener API with filters (e.g., liquidity, volume).
+- Fetch Data: Query DexScreener API with filters (e.g., liquidity, volume).
 
-    Filter Tokens: Remove duplicates and apply criteria.
+- Filter Tokens: Remove duplicates and apply criteria.
 
-    Send Alerts: Post formatted messages to Telegram.
+- Send Alerts: Post formatted messages to Telegram.
 
-    Log Results: Store results in SQLite to avoid duplicate alerts.
-    
+- Log Results: Store results in SQLite to avoid duplicate alerts.
+
+Component Breakdown
+Data Fetcher	Fetches token data from DexScreener API.
+Token Filter	Applies criteria (e.g., liquidity, volume) to filter tokens.
+Alert System	Sends alerts to Telegram with token details.
+Database	Logs processed tokens to avoid duplicate alerts.
+Main Script	Coordinates all components and runs the bot periodically.
 
 📂 Project Structure
 Copy
