@@ -1,4 +1,41 @@
 # Dexscreen-data-fetcher
+# Meme Coin Alert Bot (Week 1)
+
+A Python bot that fetches token data from DexScreener, filters tokens based on customizable criteria, and sends alerts to Telegram. Designed for tracking new and trending meme coins on Solana.
+
+---
+
+## Features
+- **Real-Time Data Fetching**: Pulls token data from DexScreener API every 5 minutes.
+- **Custom Filters**: Filters tokens by liquidity, volume, and age.
+- **Telegram Alerts**: Sends formatted alerts with key metrics (price, liquidity, volume) and DexScreener links.
+- **Duplicate Prevention**: Logs processed tokens to avoid duplicate alerts.
+
+---
+
+## How It Works
+1. **Data Fetching**:  
+   - The bot fetches token data from DexScreener’s public API.  
+   - Filters are applied to narrow down tokens (e.g., liquidity > $10k, volume > $50k).  
+
+2. **Token Filtering**:  
+   - Tokens are checked against criteria (e.g., age < 24 hours).  
+   - Duplicates are skipped using a local SQLite database.  
+
+3. **Telegram Alerts**:  
+   - Sends formatted messages to Telegram with token details.  
+   - Includes links to DexScreener for quick analysis.  
+
+4. **Logging**:  
+   - Logs all processed tokens to avoid duplicate alerts.  
+
+---
+
+## Setup Instructions
+
+### 1. Install Dependencies
+bash
+pip install requests python-dotenv pyyaml
 
 Simplified Workflow:
 
