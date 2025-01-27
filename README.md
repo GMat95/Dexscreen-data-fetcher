@@ -1,6 +1,15 @@
 # Dexscreen-data-fetcher
-Dexscreen data fetcher
-edits
+
+Simplified Workflow:
+
+    Fetch Data: Query DexScreener API with filters (e.g., liquidity, volume).
+
+    Filter Tokens: Remove duplicates and apply criteria.
+
+    Send Alerts: Post formatted messages to Telegram.
+
+    Log Results: Store results in SQLite to avoid duplicate alerts.
+    
 
 📂 Project Structure
 Copy
