@@ -1,5 +1,5 @@
 # Dexscreen-data-fetcher
-# Meme Coin Alert Bot (Week 1)
+# Meme Coin Alert Bot 🚀
 
 A Python bot that fetches token data from DexScreener, filters tokens based on customizable criteria, and sends alerts to Telegram. Designed for tracking new and trending meme coins on Solana.
 
